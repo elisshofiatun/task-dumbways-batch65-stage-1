@@ -1,0 +1,73 @@
+        /* Container utama agar card bisa di-tengah secara absolut */
+        .hero-section {
+            position: relative;
+            min-height: 90vh; /* Mengambil sisa tinggi layar */
+            width: 100%;
+        }
+
+        .custom-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 800px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Perbaikan responsif untuk mobile */
+        @media (max-width: 768px) {
+            .custom-card {
+                position: relative; /* Kembali ke normal di mobile agar tidak terpotong */
+                top: 0;
+                left: 0;
+                transform: none;
+                margin: 20px auto;
+            }
+            .hero-section {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    .contact-section {
+    background-color: #e9ecef; /* Warna latar belakang abu-abu muda sesuai gambar */
+    padding: 80px 0;
+    }
+    .form-label {
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+    }
+    .form-control, .form-select {
+        border: none;
+        border-radius: 4px;
+        padding: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Shadow halus sesuai gambar */
+    }
+    .btn-submit {
+        background-color: #1a1e26; /* Warna gelap sesuai gambar */
+        color: white;
+        border-radius: 50px;
+        padding: 10px 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .btn-submit:hover {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+.logo-font {
+  font-family: "Playwrite CU Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
